@@ -1,0 +1,1 @@
+Given an increasing integer array a, return a boolean represents whether you can find an index i such that a[i] == i.

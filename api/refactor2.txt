@@ -1,0 +1,8 @@
+Can you refactor this code?
+def f(x: int, y: int) -> int:
+    if x == 0:
+        return y
+    if y == 0:
+        return x
+    return f(x ^ y, (x & y) << 1)
+

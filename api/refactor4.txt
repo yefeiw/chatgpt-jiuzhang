@@ -1,0 +1,7 @@
+Can you refactor this code?
+def f(x: int, y: int) -> int:
+    if x == 0 or y == 0:
+        return 0
+    m = f(x, y // 2)
+    return m * m if y % 2 == 0 else m * m * x
+

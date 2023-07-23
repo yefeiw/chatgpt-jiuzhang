@@ -1,0 +1,14 @@
+Translate this code into python.
+class Solution {
+public:
+int numberOfSpecialSubstrings(string s) {
+int r = 0;
+const int n = s.length();
+for (int i = 0; i < n; ++i) {
+for (int j = i, state = 0; j < n && (state & (1 << (s[j] - 'a'))) == 0; ++r, state |= 1 << (s[j++] - 'a'))
+;
+}
+return r;
+}
+};
+`

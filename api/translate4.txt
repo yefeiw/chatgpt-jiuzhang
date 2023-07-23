@@ -1,0 +1,4 @@
+Translate this code into java.
+def f(x: int, y: int) -> int:
+    return f(y, x % y) if y else x
+

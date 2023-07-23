@@ -1,0 +1,6 @@
+Can you optimize this code?
+def f(x: int, y: int) -> int:
+    for r in range(min(x, y), 0, -1):
+        if x % r == 0 and y % r == 0:
+            return r
+

@@ -1,0 +1,2 @@
+Write a function to list prime numbers from 1 to n.
+

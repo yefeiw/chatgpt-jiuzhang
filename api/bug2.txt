@@ -1,0 +1,11 @@
+Can you fix bug in the code?
+I want to count the number of set bit in the binary representation of integer x.
+def f(x: int) -> int:
+    r = 0
+    while x:
+        if not (x & 1):
+            r += 1
+        x &= x - 1
+    return r
+ 
+
